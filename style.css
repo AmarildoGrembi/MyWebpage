@@ -1,0 +1,188 @@
+﻿		#container{        margin-bottom:-5px;min-height:100%;position:relative;}
+
+		html,
+		body {background-color:	#2E2E1F;
+			margin:0;
+			padding:0;
+			height:100%;
+		   background-image:url(image/diasthma.jpg);
+			               background-position:center;
+			               background-attachment:fixed;
+			               background-repeat:no-repeat;
+			               background-size:cover;}
+		body{           }
+
+
+		#header{margin-left:100px;
+		margin-top:40px;}
+
+
+
+		   div#menu ul {
+					margin-left:200px;
+				padding: 20px;
+				overflow: hidden;
+				width: 100%;
+				}
+				
+			div#menu ul li {
+				list-style-type: none;
+				margin: 5px;
+				
+				float: left;
+				
+				}
+				
+			div#menu ul li a {
+				display: block;
+				width: 120px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color:black;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 9pt;
+				text-transform: uppercase;
+				
+				}
+			
+			div#menu ul li a:hover {
+				background-color: #900;
+				color: #FFF;
+				}
+
+		#menu{                 list-style:none;
+		                       padding:0px;
+		                       margin-top:30px;
+				               margin-left:5px;
+				               
+				               -webkit-transition:opacity .3s ease-in-out;
+							   -moz-transition:opacity .3s ease-in-out;
+							   transition:opacity .3s ease-in-out;
+				               position:absolute;
+				               top:70px;
+		}		  
+		#menu a{                text-decoration:none;
+		                       color:red;
+		                       font-family:'Segoe script';
+		                       font-size:20px;}	
+				  
+			  
+		#menu li {               height:50px;
+		                       width:145px;
+				               overflow:hidden;
+				               -webkit-transition:all .65s ease-in-out;
+							   -moz-transition:all .65s ease-in-out;
+							   transition:all .65s ease-in-out;}
+							   
+		#menu li:hover{
+		                       transition:650ms;}
+						   				   
+		#menu li a {              
+				               background:#bbb;
+				               cursor:pointer;
+				               -webkit-transition:all .2s ease-in-out;
+				               -moz-transition:all .2s ease-in-out;
+				               transition:all .2s ease-in-out;}
+							   
+
+
+
+		#main{      		  
+		margin-left:200px;
+		margin-top:200px;
+
+		 min-height:400px;
+		                       min-width:800px;
+		                       background-color:#D2D2D2;
+		                       overflow:auto;
+		                       
+		                       box-shadow:5px 3px 5px rgba(0,40,0,.7);
+		                       -webkit-box-shadow:5px 3px 5px rgba(0,40,0,.7);
+		                       -moz-box-shadow:5px 3px 5px rgba(0,40,0,.7);
+		                       
+		                       padding:40px;
+		                      font-family:'Segoe script';
+							   
+		                       }
+							   
+		#foto img {padding-left:20px;
+		               height:180px;
+					   width:240px;}
+		#foto img:hover{-webkit-transform:rotateX(360deg);
+		                       -moz-transform:rotateX(360deg);
+		                       transform:rotateX(360deg);
+							   transition: all 1500ms ease;}			   
+				#contakts{text-align:center;}			   
+		#contakts img{padding-left:40px;
+		               height:120px;
+					   width:160px;
+					   } 
+		 
+		 #footer {font-size:20px;
+			width:100%;
+			height:5px;
+			position:relative;
+		    color:white;text-align:center;
+			
+		}
+		.container{top:-80px;float:right;
+
+			width: 300px;
+			height:300px;
+			margin: 0 auto;
+			position:relative;
+			overflow:hidden;
+		}
+
+		.planet{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+		}
+
+		.rocket{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 50px center;
+
+			
+			-webkit-animation:orbit 2s linear infinite;
+			animation:orbit 2s linear infinite;
+
+			transition:background-position 0.8s;
+		}
+
+		.container:hover .rocket{
+			background-position:80px center;
+		}
+
+
+		@-webkit-keyframes orbit {
+			from {
+				-webkit-transform:rotate(0deg);}
+			to {
+				-webkit-transform:rotate(360deg);
+			}
+		}
+
+		@keyframes orbit {
+			from {
+				transform:rotate(0deg);
+
+				
+
+				-webkit-transform:rotate(0deg);}
+			to {
+				transform:rotate(360deg);
+				-webkit-transform:rotate(360deg);
+			}
+		}
+							   

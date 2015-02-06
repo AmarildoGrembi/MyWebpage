@@ -1,0 +1,84 @@
+﻿			<!DOCTYPE html>
+
+
+			<html>
+			<head>
+			         <meta charset="UTF-8">
+			         <link rel="stylesheet" href="style.css"/>
+
+			        <title>Grembi Amarildo</title>
+			</head>
+
+			<body>
+			          <div id="container">
+					     <div id="header">
+					     <img src="image/my-website.png" >
+						 <div class="container">
+				                <div class="planet"></div>
+			                	<div class="rocket"></div>
+			               </div>
+						 </div>
+						 
+						 <div id="menu">
+						 
+						 <ul>
+						    <li><a href="index.html">Home </a></li>
+			                <li><a href="biography.html">Biography </a></li>
+			                <li><a href="photos.html">Photos </a></li>
+			                <li><a href="hobbies.html">Interests </a></li>
+			                <li><a href="contact.html">Contact </a></li>
+			                <li><a href="JavaScript.html">JavaScript </a></li>
+
+			            </ul>
+						 </div>
+					    <div id="main">
+						
+						
+						<table border="0" width="350" cellspacing="0" cellpadding="0">
+			  <tr>
+			    <td><img border="0" src="image/roulette.jpg" width="152" height="216"></td>
+			    <td>
+
+			<form name="fire">
+			Load the Gun up (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+			<p>
+			<input name="message" type="button" value="Pull the Trigger!" onClick="fireit()">
+			</p>
+
+			</form>
+
+			<script>
+
+
+			function fireit(){
+			var theone=Math.floor(Math.random()*6)
+
+			if (theone<=document.fire.bullets.value-1)
+			alert("Bang. DEAD!")
+			else{
+			document.fire.message.value="Whew. Lucky Guy!"
+			setTimeout("document.fire.message.value='You feeling lucky?!'",500)
+			}
+			}
+
+			</script>
+
+
+			</td>
+			  </tr>
+			</table>
+			        </div>
+					  <div id="footer">
+					  Copyright © 2014 
+					  </div>
+					  </div>
+					  
+					  
+				 
+				 
+				 
+			</body>
+
+
+			</html>
